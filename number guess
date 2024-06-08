@@ -1,0 +1,21 @@
+import os
+from os import *
+import random 
+from random import *
+a = 10
+b = 0
+print("GUESS THE INTEGER NUMBER 1 -10")
+print("YOU HAVE 5 CHANCE")
+while(b<6):
+    
+    c = int(input("guess the number"))
+    if(c<a):
+        print("you entered lowest small value,more increase")
+    if(c>a):
+        print("you entered big value, make it decrese value")
+    if(c == a):
+        print("sucess,WELL DONE!")
+        break
+    else:
+        print(b,"th CHANCE !,sorry try again!")
+        b = b+1
